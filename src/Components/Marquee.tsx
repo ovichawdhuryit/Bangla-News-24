@@ -1,6 +1,12 @@
 import React from 'react';
 import MarqueeText from "react-marquee-text"
 import "react-marquee-text/dist/styles.css"
+
+interface type{
+    id: string;
+    title: string;
+    url: string;
+}
 const Marquee = async () => {
     const response = await fetch('https://news-api-v2.vercel.app/api/news?limit=10');
     const data = await response.json();
