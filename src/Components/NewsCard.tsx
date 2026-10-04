@@ -1,7 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const NewsCard = ({ news }) => {
+interface News {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  imageUrl: string;
+  imageAlt?: string;
+}
+const NewsCard = ({ news }: { news: News }) => {
   return (
     <div className="card  bg-base-100 shadow-sm">
       <figure>
