@@ -1,12 +1,13 @@
 import NewsCard from '@/Components/NewsCard';
 import React from 'react';
 
+
 const CategoryPage = async ({ params }) => {
     const { categoryId } = await params;
     const response = await fetch(`https://news-api-v2.vercel.app/api/category/${categoryId}`)
     const data = await response.json()
     const categoryData = data.data
-
+ 
 
 
     return (
