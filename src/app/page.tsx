@@ -1,5 +1,6 @@
 import MainNews from "@/Components/MainNews";
 import Marquee from "@/Components/Marquee";
+import MostRead from "@/Components/MostRead";
 import NewsCard from "@/Components/NewsCard";
 
 interface otherSection {
@@ -21,7 +22,7 @@ export default async function Home() {
   const sections = data.data
   const mainNews = sections[0].articles
   const otherNews:otherSection[] = sections.slice(1)
-  console.log(otherNews)
+
 
 
 
@@ -56,7 +57,10 @@ export default async function Home() {
         </div>
 
         {/* Most Read Section */}
-        <div className="bg-amber-950 col-span-1">
+        <div className="col-span-1">
+          <MostRead />
+
+          
 
         </div>
       </div>
