@@ -20,7 +20,7 @@ const MostRead = async () => {
             <div className="grid gap-3">
                 {data2.map((news: MostReadNews, i) => (
                     <div className = "flex" key={news.rank}>
-                        <p className = "font-bold">
+                        <p className = "font-bold text-red-800">
                             {i + 1}.    
                         </p>
                         {news.title}
