@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-const MainNews = ({ news }) => {
+interface News {
+    id: string;
+    title: string;
+    description: string;
+    category: string;
+    imageUrl: string;
+}
+const MainNews = ({ news }: {news: News[]}) => {
     const firstNews = news[0];
 
     const otherNews = news.slice(1, 5);
