@@ -1,24 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
     return (
-        <div className= "flex justify-center bg-white px-70 text-black">
-        <footer className="footer sm:footer-horizontal bg-white text-black ">
-            <aside>
+        <footer className="bg-white text-black">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6">
+                <p>© 2026 BanglaBulletin</p>
 
-                <p>
-                    © 2026 BanglaBulletin
-
-                </p>
-            </aside>
-  
-                <div>
-
-                    Source: BBC Bangla
-                </div>
-
+                <p>Source: BBC Bangla</p>
+            </div>
         </footer>
-        </div>
     );
 };
 
