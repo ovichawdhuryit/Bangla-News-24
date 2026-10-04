@@ -8,10 +8,10 @@ interface type{
     url: string;
 }
 const Marquee = async () => {
-    const response = await fetch('https://news-api-v2.vercel.app/api/news?limit=10');
+    const response = await fetch("https://news-api-v2.vercel.app/api/news?limit=10");
     const data = await response.json();
     const news = data.data;
-    console.log(news);
+  
 
     return (
         <div className="my-7 bg-red-600 text-white">
